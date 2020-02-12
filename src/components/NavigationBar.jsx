@@ -9,8 +9,10 @@ function NavigationBar(){
 
     <style jsx>{`
       .navbar-brand {
+        font-size: 30px;
         margin-left: 80px;
       }
+
       .dropdown-toggle {
         margin-left: 70px;
       }
@@ -18,11 +20,20 @@ function NavigationBar(){
         margin-right: 50px;
       }
       .navbar {
-        background: rgba (0, 0, 0, 0)
+        font-weight: bold;
+
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: 2px 2px 5px #000000;
+      }
+
+      .signInBox{
+        border: 2px solid gray;
+        border-radius: 7%;
+        background-color: rgba(0, 0, 0, .);
       }
     `}</style>
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-    <Navbar.Brand href="#home">Glassdoor</Navbar.Brand>
+    <Navbar collapseOnSelect expand="lg" variant="dark">
+    <Navbar.Brand className="make-white" href="#home">glassdoor</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
@@ -43,7 +54,7 @@ function NavigationBar(){
     </NavDropdown>
     </Nav>
     <Nav>
-    <Nav.Link href="#deets">Sign In</Nav.Link>
+    <Nav.Link className='signInBox' href="#deets">Sign In</Nav.Link>
     <Nav.Link eventKey={2} href="#memes">
     Post Jobs Free
     </Nav.Link>
