@@ -9,10 +9,11 @@ function Header(){
     <div className="header-body">
       <style jsx>{`
           .header-body {
-            background-image: url('https://images.pexels.com/photos/935756/pexels-photo-935756.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
-            background-size: 100%;
-            background-position: center;
+
+             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/935756/pexels-photo-935756.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
             background-repeat: no-repeat;
+            background-position: center right;
+            background-size: 140%;
           }
 
             `}</style>

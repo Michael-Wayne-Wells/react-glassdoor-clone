@@ -21,15 +21,22 @@ function NavigationBar(){
       }
       .navbar {
         font-weight: bold;
-
+        height: 60px;
         background-color: rgba(0, 0, 0, 0);
-        box-shadow: 2px 2px 5px #000000;
+        box-shadow: 1px 1px 3px #000000;
+      }
+      .postJob {
+        margin-top: 8px;
       }
 
       .signInBox{
-        border: 2px solid gray;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 30px;
         border-radius: 7%;
-        background-color: rgba(0, 0, 0, .);
+        padding: 5px;
+        padding-bottom: 30px;
+        background-color: rgba(0, 0, 0, .3);
       }
     `}</style>
     <Navbar collapseOnSelect expand="lg" variant="dark">
@@ -55,7 +62,7 @@ function NavigationBar(){
     </Nav>
     <Nav>
     <Nav.Link className='signInBox' href="#deets">Sign In</Nav.Link>
-    <Nav.Link eventKey={2} href="#memes">
+    <Nav.Link className='postJob' eventKey={2} href="#memes">
     Post Jobs Free
     </Nav.Link>
     </Nav>

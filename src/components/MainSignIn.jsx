@@ -8,7 +8,7 @@ function MainSignIn(){
       <style jsx>{`
           .MainSignIn {
             text-align: center;
-            width: 55%;
+            width: 45%;
             margin: 0 auto;
             margin-top: 50px;
             color: white;
@@ -19,15 +19,6 @@ function MainSignIn(){
             background: white;
           }
 
-          .line-element {
-            display: block;
-            height: 1px;
-            border: 0;
-            border-top: 1px solid #ccc;
-            margin: 1em 0;
-            padding: 0;
-
-          }
           .gooButt {
             border-radius: 5px;
             color: red;
@@ -35,7 +26,7 @@ function MainSignIn(){
             padding: 7px;
             border: none;
             width: 49%;
-            margin-bottom: 15px;
+            margin-bottom: 30px;
           }
           .gooButtImg {
             height: 25px;
@@ -47,6 +38,7 @@ function MainSignIn(){
             border: none;
             background-color: rgb(34, 123, 239);
             margin-right: 1%;
+            margin-bottom: 30px;
             padding: 7px;
             color: white;
             width: 49%;
@@ -94,7 +86,38 @@ function MainSignIn(){
           }
           h3{
             margin-top: 20px;
-              font-size: 20px;
+            font-size: 20px;
+          }
+          .inline-line {
+            display: inline-block;
+            position: relative;
+          }
+          .thatOr span {
+            display: inline-block;
+            position: relative;
+
+          }
+          .thatOr span:before,
+          .thatOr span:after {
+
+            content: "";
+            position: absolute;
+            height: 2px;
+            border-bottom: 1px solid white;
+
+            top: 0;
+            width: 800px;
+
+          }
+
+          .thatOr span:before {
+            right: 100%;
+            margin-right: 15px;
+          }
+
+          .thatOr span:after {
+            left: 100%;
+            margin-left: 15px;
           }
 
           `}</style>
@@ -102,10 +125,13 @@ function MainSignIn(){
         <p className='byContinuingText'>By continuring, you agree to give us your soul.</p>
         <button className='faceButt'><img className='faceButtImg'src='https://betterbellyproject.com/assets/img/facebook-icon-inverse.png'></img>Continue to Face Butt</button>
         <button className='gooButt'><img className='gooButtImg'src='https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png'></img>Continue with Goo Butt</button>
-        <div className="inline-line">
-          <div className="line-element"><p className="thatOr">or</p></div>
 
-        </div>
+
+
+        <p className="thatOr"><span>or</span></p>
+
+
+
         <input className='createEmail' placeholder='Create account with Email'></input>
         <p className="validEmailText">Please enter a valid email address.</p>
         <input className='password' placeholder='Password'></input><br></br>
