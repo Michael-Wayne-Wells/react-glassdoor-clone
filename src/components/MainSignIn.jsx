@@ -106,7 +106,7 @@ function MainSignIn(){
             border-bottom: 1px solid white;
 
             top: 0;
-            width: 800px;
+            width: 1500%;
 
           }
 
